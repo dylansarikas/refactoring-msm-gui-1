@@ -16,6 +16,7 @@ class Character < ApplicationRecord
     end
 
     def actor
-
+        the_id = self.actor_id
+        matching_actor = Actor.find(the_id)
     end
 end

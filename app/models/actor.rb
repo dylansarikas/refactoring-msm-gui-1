@@ -12,6 +12,7 @@
 #
 class Actor < ApplicationRecord
     def characters
-
+        the_id = self.id
+        matching_actors = Character.where({ :actor_id => the_id})
     end
 end
